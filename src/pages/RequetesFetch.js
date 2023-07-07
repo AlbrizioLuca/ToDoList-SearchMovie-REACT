@@ -3,10 +3,8 @@ import FetchQuery from '../components/FetchQuery';
 import DisplayPost from '../components/DisplayPost';
 
 export default function Page5(){
-    
     const url = 'https://jsonplaceholder.typicode.com/posts';
     const queryOptions = '?_limit=10';
-
     return(
         <>
             <NavBar />

@@ -59,21 +59,17 @@ nav li:last-child {
   margin-right: 0;
 }
 
-h1, h3 {
+h1, h3, a {
   color: #61dafb;
 }
 
-h2 {
-  color: white;
-}
-
-li , span , p {
+h2 , li , span , p , form {
   list-style-type: none;
   color: white;
 }
 
-a {
-  color: #61dafb;
+input not:check{
+  width: 20%;
 }
 
 .resume {
