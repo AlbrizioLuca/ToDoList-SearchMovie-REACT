@@ -6,7 +6,7 @@ import Resume from './pages/InfoReact';
 import Liste from './pages/ListeChoseAFaire';
 import MovieSearch from './pages/MovieApi';
 import Formulaire from './pages/FormClassic';
-import Fetch from './pages/RequetesFetch';
+import Admin from './pages/Admin-CRUD';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
           <Route path="to-do-list" element={<Liste />}></Route>
           <Route path="search-movie" element={<MovieSearch />}></Route>
           <Route path="formulaire" element={<Formulaire />}></Route>
-          <Route path="fetch-request" element={<Fetch />}></Route>
+          <Route path="admin" element={<Admin />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>

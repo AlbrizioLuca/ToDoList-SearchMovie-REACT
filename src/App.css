@@ -68,16 +68,55 @@ h2 , li , span , p , form {
   color: white;
 }
 
-input not:check{
-  width: 20%;
+table {
+  border: 1px solid black;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.resume {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-justify: auto;
-  text-align: justify;
-  margin: auto; 
+table th {
+  background-color: #61dafb;
+}
+
+table tr:first-child {
+  background-color: whitesmoke;
+}
+
+table tr:nth-child(even) {
+  background-color: #61dafb;
+}
+
+table tr:nth-child(odd) {
+  background-color: white;
+}
+table input{
+  width: 90% ;
+  border: 0;
+  background: transparent;
+  text-align: center;
+}
+
+@keyframes blink {
+  0% { border-color: red; }
+  50% { border-color: transparent; }
+  100% { border-color: red; }
+}
+
+.blinking-input {
+  border: 2px solid red;
+  animation: blink 3s linear infinite;
+}
+
+table img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+button {
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }

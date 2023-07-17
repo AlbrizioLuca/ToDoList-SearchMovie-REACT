@@ -11,7 +11,7 @@ export default function NavBar(){
                     <li><Link to="/to-do-list" >ToDo LIST</Link></li>
                     <li><Link to="/search-movie" >API Search Movie </Link></li>
                     <li><Link to="/formulaire" >Formulaire </Link></li>
-                    <li><Link to="/fetch-request" >Requêtes FETCH</Link></li>
+                    <li><Link to="/admin" >Admin - CRUD</Link></li>
                 </ul>
             </nav>
             <DateTime/>
