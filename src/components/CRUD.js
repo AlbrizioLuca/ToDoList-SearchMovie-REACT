@@ -4,7 +4,7 @@ import cancelIcon from '../img/effacer.png';
 import validIcon from '../img/valider.png';
 import annulIcon from '../img/annuler.png';
 
-const CrudComponent = ({ param, fields }) => {
+const CrudComponent = ({ param, fields, setParam }) => {
     const [data, setData] = useState(null);
     const [creatingData, setCreatingData] = useState(false);
     const [editingData, setEditingData] = useState(null);
@@ -93,7 +93,13 @@ const CrudComponent = ({ param, fields }) => {
             <table>
                 <thead>
                     <tr>
-                        <th></th>
+                        <th>
+                            <select value={param} onChange={(e) => setParam(e.target.value)}>
+                                <option value="users">Utilisateurs</option>
+                                <option value="posts">Posts</option>
+                                <option value="comments">Commentaires</option>
+                            </select>
+                        </th>
                         {fields.map((field, index) => (
                             <th key={index}>{field.label}</th>
                         ))}
